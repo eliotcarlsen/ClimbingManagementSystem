@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { Router, RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
@@ -9,7 +9,7 @@ import { LayoutModule } from '../modules/layout/layout.module';
 import { SystemModule } from '../modules/system/system.module';
 import { LoginModule } from '../modules/login/login.module';
 import { DashboardModule } from '../modules/dashboard/dashboard.module';
-import { LegalModule } from '../modules/legal/legal.module';
+// import { LegalModule } from '../modules/legal/legal.module';
 
 import { HttpService } from '../providers/http.service';
 import { AuthenticateService } from '../providers/auth/authenticate.service';
@@ -35,6 +35,9 @@ import { CmsComponent } from './cms.component';
     DashboardModule,
     LoginModule,
     SystemModule,
+  ],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA,
   ],
   bootstrap: [
     CmsComponent,
