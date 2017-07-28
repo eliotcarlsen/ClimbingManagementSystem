@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthenticateService } from '../../../../providers/auth/authenticate.service';
 
 @Component({
   selector: 'app-layout',
@@ -6,10 +7,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: [
     './base.component.css',
   ],
-  providers: []
+  providers: [
+    AuthenticateService,
+  ]
 })
 export class LayoutBaseComponent implements OnInit {
-  constructor() { }
+  protected authService: AuthenticateService
+  constructor(authService: AuthenticateService) {
+    this.authService = authService
+  }
 
   ngOnInit() { }
+
+  logoutClicked() {
+    this.authService.logout()
+  }
 }

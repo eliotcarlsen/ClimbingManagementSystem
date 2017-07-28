@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
@@ -18,6 +18,9 @@ import { LayoutMenuComponent } from './components/menu/menu.component';
   ],
   exports: [
     LayoutBaseComponent,
+  ],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
   ],
   declarations: [
     LayoutBaseComponent,

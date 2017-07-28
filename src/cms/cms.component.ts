@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-cms',
-  templateUrl: '../modules/layout/components/base/base.component.html',
+  template: '<app-layout></app-layout>',
 })
 export class CmsComponent implements OnInit {
   constructor() { }

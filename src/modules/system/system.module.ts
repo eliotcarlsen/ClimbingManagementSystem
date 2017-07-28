@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { SystemRoutes } from './system.routes';
 
@@ -11,5 +11,8 @@ import { NotFoundComponent } from './components/notfound/notfound.component';
   imports: [
     SystemRoutes,
   ],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
+  ]
 })
 export class SystemModule { }

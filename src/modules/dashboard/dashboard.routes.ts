@@ -1,5 +1,7 @@
 import { RouterModule } from '@angular/router';
 
+import { AuthGuardService } from '../../providers/auth/guard.service';
+
 import { DashboardHomeComponent } from './components/home/home.component';
 
 export const DashboardRoutes = RouterModule.forRoot([
@@ -11,7 +13,7 @@ export const DashboardRoutes = RouterModule.forRoot([
   {
     path: 'dashboard',
     component: DashboardHomeComponent,
-    // canActivate: [AuthGuardService],
-    // canLoad: [AuthGuardService],
+    canActivate: [AuthGuardService],
+    canLoad: [AuthGuardService],
   },
 ])

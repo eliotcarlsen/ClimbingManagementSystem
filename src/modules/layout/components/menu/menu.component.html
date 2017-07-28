@@ -1,19 +1,27 @@
-<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+<div class="navbar navbar-toggleable-md navbar-light bg-faded">
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <a class="navbar-brand" routerLink="/">
-    <img src="https://s-media-cache-ak0.pinimg.com/736x/fb/bf/a4/fbbfa4fd14ac9a4273fea4700716ca88.jpg" alt="climbingManagementSystem" style="width:90px">
+
+  <a class="navbar-climbing" routerLink="/">
+    <img src="https://s-media-cache-ak0.pinimg.com/736x/fb/bf/a4/fbbfa4fd14ac9a4273fea4700716ca88.jpg" alt="climbingManagementSystem" style="width:90px" class="d-inline-block align-top" />
   </a>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+  <div class="collapse navbar-collapse">
     <h1>"I'm here"</h1>
-    <!-- <app-dashboard-menu></app-dashboard-menu> -->
+    <app-dashboard-menu></app-dashboard-menu>
+  </div>
 
-    <app-login-menu></app-login-menu> -->
+  <div class="collapse navbar-collapse justify-content-end">
+    <app-login-menu></app-login-menu>
 
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search...">
-      <a class="my-2 my-sm-0"><i class="fa fa-search" aria-hidden="true"></i></a>
+    <form class="form-inline">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search..." aria-describedby="search" />
+        <span class="input-group-addon" id="basic-addon1">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </span>
+      </div>
     </form>
   </div>
-</nav>
+</div>

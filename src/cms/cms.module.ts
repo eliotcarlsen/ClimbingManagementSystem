@@ -9,10 +9,11 @@ import { LayoutModule } from '../modules/layout/layout.module';
 import { SystemModule } from '../modules/system/system.module';
 import { LoginModule } from '../modules/login/login.module';
 import { DashboardModule } from '../modules/dashboard/dashboard.module';
-// import { LegalModule } from '../modules/legal/legal.module';
+import { LegalModule } from '../modules/legal/legal.module';
 
 import { HttpService } from '../providers/http.service';
 import { AuthenticateService } from '../providers/auth/authenticate.service';
+import { UserService } from '../providers/user.service';
 import { AuthGuardService } from '../providers/auth/guard.service';
 
 import { CmsComponent } from './cms.component';
@@ -20,6 +21,7 @@ import { CmsComponent } from './cms.component';
 @NgModule({
   providers: [
     AuthenticateService,
+    UserService,
     AuthGuardService,
     HttpService,
   ],
@@ -32,6 +34,7 @@ import { CmsComponent } from './cms.component';
     HttpModule,
     OAuthModule.forRoot(),
     LayoutModule,
+    LegalModule,
     DashboardModule,
     LoginModule,
     SystemModule,

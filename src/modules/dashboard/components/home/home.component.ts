@@ -5,17 +5,11 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: 'home.component.html',
   styleUrls: ['./home.component.css'],
   providers: [
-
   ],
 })
 
 export class DashboardHomeComponent implements OnInit {
+  constructor() { }
 
-  constructor() {
-
-  }
-
-  ngOnInit() {
-    
-  }
+  ngOnInit() { }
 }
