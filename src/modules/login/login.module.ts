@@ -1,4 +1,4 @@
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { FormsModule } from '@angular/forms';
@@ -21,7 +21,7 @@ import { LoginRoutes } from './login.routes';
     FormsModule,
   ],
   schemas: [
-    CUSTOM_ELEMENTS_SCHEMA
+    
   ],
   exports: [
     LoginMenuComponent,

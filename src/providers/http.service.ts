@@ -8,7 +8,7 @@ import {
   Response
 } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
-import { AuthenticateService } from '../auth/authenticate.service';
+import { AuthenticateService } from './auth/authenticate.service';
 
 @Injectable()
 export class HttpService {
@@ -26,7 +26,7 @@ export class HttpService {
   }
 
   public get(uri: string, params?: URLSearchParams): Observable<Response> {
-    return this.http.httpService.get(this.createEndpoint(uri), {
+    return this.httpService.get(this.createEndpoint(uri), {
       headers: this.headers(),
       search: params,
     })

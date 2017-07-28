@@ -13,7 +13,7 @@ export const DashboardRoutes = RouterModule.forRoot([
   {
     path: 'dashboard',
     component: DashboardHomeComponent,
-    canActivate: [AuthGuardService],
-    canLoad: [AuthGuardService],
+    // canActivate: [AuthGuardService],
+    // canLoad: [AuthGuardService],
   },
 ])

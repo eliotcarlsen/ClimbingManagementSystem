@@ -15,7 +15,7 @@ export class MetricsService {
   }
 
   digital(start: string, end: string): Observable<Response> {
-    let params: URLSearchParams = new URLSearchParams
+    const params: URLSearchParams = new URLSearchParams
 
     params.set('filter[start_date]', start)
     params.set('filter[end_date]', end)

@@ -25,13 +25,13 @@ export class LoginComponent implements OnInit {
   }
 
   public ngOnInit() {
-    if (this.authService.isAuthenticated()) {
-      this.router.navigate(['/'])
-    }
-
-    this.username = localStorage.getItem('username')
-    this.password = localStorage.getItem('password')
-    this.rememberMe = (localStorage.getItem('rememberMe') === 'true')
+    // if (this.authService.isAuthenticated()) {
+    //   this.router.navigate(['/'])
+    // }
+    //
+    // this.username = localStorage.getItem('username')
+    // this.password = localStorage.getItem('password')
+    // this.rememberMe = (localStorage.getItem('rememberMe') === 'true')
   }
 
   public login(username, password) {

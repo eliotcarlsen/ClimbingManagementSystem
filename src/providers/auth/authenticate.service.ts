@@ -39,7 +39,7 @@ class AuthenticateService {
   }
 
   public token(): string {
-    return this.oarthService.getAccessToken()
+    return this.oauthService.getAccessToken()
   }
 
   public redirectTo(url: string) {

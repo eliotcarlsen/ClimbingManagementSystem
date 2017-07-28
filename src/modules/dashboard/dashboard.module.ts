@@ -1,10 +1,10 @@
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { DashboardMenuComponent } from './components/menu/menu.component';
 import { DashboardHomeComponent } from './components/home/home.component';
-import { DashboardProfileSearch } from './components/profileSearch/profileSearch.component';
+import { DashboardProfileSearchComponent } from './components/profileSearch/profileSearch.component';
 
 import { DashboardRoutes } from './dashboard.routes';
 
@@ -12,7 +12,7 @@ import { DashboardRoutes } from './dashboard.routes';
   declarations: [
     DashboardMenuComponent,
     DashboardHomeComponent,
-    DashboardProfileSearch,
+    DashboardProfileSearchComponent,
   ],
   imports: [
     BrowserModule,
@@ -20,7 +20,7 @@ import { DashboardRoutes } from './dashboard.routes';
     BrowserAnimationsModule,
   ],
   schemas: [
-    CUSTOM_ELEMENTS_SCHEMA
+    
   ],
   exports: [
 

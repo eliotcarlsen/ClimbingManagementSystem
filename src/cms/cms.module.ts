@@ -1,5 +1,5 @@
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { Router, RouterModule } from '@angular/router';
+import { NgModule } from '@angular/core';
+import { Router } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
 import { OAuthModule } from 'angular-oauth2-oidc';
@@ -40,7 +40,7 @@ import { CmsComponent } from './cms.component';
     SystemModule,
   ],
   schemas: [
-    CUSTOM_ELEMENTS_SCHEMA,
+    
   ],
   bootstrap: [
     CmsComponent,
